@@ -1,10 +1,12 @@
 import sys
+sys.path.append('./PyScr/')
 import numpy as np
 import matplotlib.pyplot as plt
 import cmath
 import math
 import copy
 import pfprint
+import primefac
 from scipy.special import comb as choose
 
 _ = None
@@ -32,8 +34,13 @@ def pltclr():
 def fact(n):
 	return math.factorial(n)
 
+def primesS(n):
+	return primefac.primes_to_string(primefac.primes(n))
+
+def primes(n):
+	return primefac.primes(n)
+
 sys.displayhook = ppprint
-sys.path.append('./PyScr/')
 
 predef_globals = len(globals()) + 1
 def loc():
