@@ -33,7 +33,7 @@ def fact(n):
 	return math.factorial(n)
 
 sys.displayhook = ppprint
-sys.path.append('/PyScr/')
+sys.path.append('./PyScr/')
 
 predef_globals = len(globals()) + 1
 def loc():
