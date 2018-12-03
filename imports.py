@@ -42,6 +42,10 @@ def primes(n):
 
 sys.displayhook = ppprint
 
+pi = np.pi
+e = np.exp(1)
+sqrt = np.sqrt
+
 predef_globals = len(globals()) + 1
 def loc():
 	return dict(list(globals().items())[predef_globals:])
